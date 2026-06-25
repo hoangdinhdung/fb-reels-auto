@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "FB Reels Stable Auto",
+  "version": "2.0.0",
+  "host_permissions": ["*://*.facebook.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.facebook.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
